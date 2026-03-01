@@ -11,6 +11,7 @@ import NeedHelp from './route/NeedHelp.tsx'
 import Forum from './route/Forum.tsx'
 import Post from './route/Post.tsx'
 import LoginUser from './route/LoginUser.tsx'
+import LoginAdmin from './route/LoginAdmin.tsx'
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/login-user",
         element: <LoginUser/>
+      },
+      {
+        path: "/login-admin",
+        element: <LoginAdmin/>
       }
     ]
   }
