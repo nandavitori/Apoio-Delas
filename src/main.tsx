@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // pages
@@ -15,6 +14,7 @@ import LoginAdmin from './route/LoginAdmin.tsx'
 import LayoutSite from './Layouts/LayoutSite.tsx'
 import  LayoutUser from './Layouts/LayoutUser.tsx'
 import LayoutAdmin from './Layouts/LayoutAdmin.tsx'
+import UserDashboard from './route/UserDashboard.tsx'
 
 const router = createBrowserRouter([
   // site publico
@@ -58,8 +58,8 @@ const router = createBrowserRouter([
   {
     element: <LayoutUser/>,
     children: [
-      { path: "/user-dashboard"  
-
+      { path: "/user-dashboard",
+        element: <UserDashboard/>
       }
     ]
   },
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
     element: <LoginAdmin />
   },
 
-  // 👑 ÁREA DO ADMIN
+  // ÁREA DO ADMIN
   {
     element:<LayoutAdmin/>,
     children: [

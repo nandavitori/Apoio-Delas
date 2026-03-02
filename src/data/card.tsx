@@ -34,6 +34,16 @@ type LinkItem =
   date: string
  }
 
+ export type Status = 'Pendente' | 'Aprovado' | 'Recusado'
+ export type Relato = {
+  id: string,
+  codigo: string,
+  texto: string,
+  date: string,
+  status: string,
+  comments: {author: string; text: string; date: string}[]
+ }
+
 export const cardsData: Card[] = [
     {
     icon: <Users size={48} className="text-white" />,
@@ -168,3 +178,30 @@ export const commentsByPost: Record<string, Comment[]> = {
     { id: 'c3', author: 'Anônima', text: 'Falar sobre isso realmente ajuda. Muito obrigada.', date: '25/02/2026' },
   ],
 }
+
+export const statusColor: Record<Status, string> = {
+  Pendente: 'bg-yellow-100 text-yellow-700',
+  Aprovado: 'bg-green-100 text-green-700',
+  Recusado: 'bg-red-100 text-red-700',
+}
+
+export const mocksRelatos: Relato[] = [
+{
+  id: '1',
+  codigo: 'REL-468',
+  texto: 'Gostaria de compartilhar minha história de superação. Depois de anos em um relacionamento abusivo, consegui sair com ajuda de uma rede de apoio. Hoje estou reconstruindo minha vida...',
+  date: '26/03/2025',
+  status: 'Pendente',
+  comments: [{
+    author: 'Anonima', text:'Você é muito corajosa!', date: '29/03/2025'
+  }]
+},
+ {
+    id: '2',
+    codigo: 'REL-312',
+    texto: 'Quero contar como a Lei Maria da Penha me protegeu quando mais precisei. A medida protetiva foi essencial para garantir minha segurança...',
+    date: '10/03/2025',
+    status: 'Aprovado',
+    comments: [],
+  },
+]
