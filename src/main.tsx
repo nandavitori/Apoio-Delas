@@ -12,14 +12,16 @@ import Forum from './route/Forum.tsx'
 import Post from './route/Post.tsx'
 import LoginUser from './route/LoginUser.tsx'
 import LoginAdmin from './route/LoginAdmin.tsx'
-
+import LayoutSite from './Layouts/LayoutSite.tsx'
+import  LayoutUser from './Layouts/LayoutUser.tsx'
+import LayoutAdmin from './Layouts/LayoutAdmin.tsx'
 
 const router = createBrowserRouter([
+  // site publico
   {
-    path:"/",
-    element: <App/>,
-    children:[
-      {
+    element: <LayoutSite/>,
+    children: [
+       {
         path: "/",
         element: <Home/>
       },
@@ -42,14 +44,38 @@ const router = createBrowserRouter([
       {
         path:"/vozes-noticias/:id",
         element: <Post/>
-      },
-      {
-        path: "/login-user",
-        element: <LoginUser/>
-      },
-      {
-        path: "/login-admin",
-        element: <LoginAdmin/>
+      }
+    ]
+  },
+
+  //Login User
+  {
+    path: "/login-user",
+    element: <LoginUser/>,
+  },
+
+  //  ÁREA DO USUÁRIO
+  {
+    element: <LayoutUser/>,
+    children: [
+      { path: "/user-dashboard"  
+
+      }
+    ]
+  },
+
+  //  LOGIN ADMIN (SEM HEADER)
+  {
+    path: "/login-admin",
+    element: <LoginAdmin />
+  },
+
+  // 👑 ÁREA DO ADMIN
+  {
+    element:<LayoutAdmin/>,
+    children: [
+      { path: "/admin-dashboard"
+
       }
     ]
   }
