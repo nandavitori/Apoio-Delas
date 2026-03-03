@@ -1,8 +1,8 @@
-import { Outlet } from 'react-router-dom'
-import './App.css'
-import Header from './components/Header'
-import OutBtn from './components/OutBtn'
-import Footer from './components/Footer'
+// import { Outlet } from 'react-router-dom'
+// import './App.css'
+// import Header from './components/Header'
+// import OutBtn from './components/OutBtn'
+// import Footer from './components/Footer'
 
 
 function App() {

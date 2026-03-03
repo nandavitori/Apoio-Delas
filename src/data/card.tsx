@@ -1,4 +1,4 @@
-import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake} from "lucide-react"
+import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake, Heart, Lightbulb, Target} from "lucide-react"
 import { Link } from "react-router-dom"
 
  type Card = {
@@ -204,4 +204,27 @@ export const mocksRelatos: Relato[] = [
     status: 'Aprovado',
     comments: [],
   },
+]
+
+export const pilares = [
+  {
+    icon: <Lightbulb size={24} className="text-[#056881]" />,
+    title: 'A Ideia',
+    text: 'Tudo começou com uma pergunta simples: por que é tão difícil encontrar informação e apoio quando mais se precisa? A resposta nos motivou a agir.',
+  },
+  {
+    icon: <Heart size={24} className="text-[#7b0692]" />,
+    title: 'O Porquê',
+    text: 'Milhares de mulheres enfrentam a violência em silêncio por falta de acesso a informação, suporte e escuta. Decidimos que precisávamos mudar isso.',
+  },
+  {
+    icon: <Target size={24} className="text-[#FF5F37]" />,
+    title: 'Nossa Missão',
+    text: 'Ser um espaço seguro, acessível e acolhedor onde toda mulher possa encontrar informação, apoio e comunidade — sem julgamentos.',
+  },
+  {
+    icon: <Users size={24} className="text-[#056881]" />,
+    title: 'Quem Somos',
+    text: 'Somos estudantes comprometidas em usar a tecnologia como ferramenta de transformação social, colocando as mulheres no centro de tudo.',
+  }
 ]

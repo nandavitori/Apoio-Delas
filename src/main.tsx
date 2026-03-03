@@ -15,6 +15,7 @@ import LayoutSite from './Layouts/LayoutSite.tsx'
 import  LayoutUser from './Layouts/LayoutUser.tsx'
 import LayoutAdmin from './Layouts/LayoutAdmin.tsx'
 import UserDashboard from './route/UserDashboard.tsx'
+import Us from './route/Us.tsx'
 
 const router = createBrowserRouter([
   // site publico
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
        {
         path: "/",
         element: <Home/>
+      },
+      {
+        path: "/q-somos",
+        element: <Us/>
       },
       {
         path: "/mapa",

@@ -73,7 +73,7 @@ const UserDashboard = () => {
         </button>
 
         {/* Lista de Relatos */}
-        <div className='bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col gap-4'>
+        <div className='bg-[#c5e7f04b] rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col gap-4'>
             <h2 className='text-lg font-bold text-[#09083D]'>Meus Relatos</h2>
             {relatos.length === 0 && (
                 <p className="text-gray-400 text-sm">Nenhum Relato Ainda</p>

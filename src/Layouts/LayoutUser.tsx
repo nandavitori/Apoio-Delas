@@ -1,6 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom"
 import HeaderAdmin from "../components/HeaderAdmin"
 import Footer from "../components/Footer"
+import OutBtn from "../components/OutBtn"
 
 
 const LayoutUser = () => {
@@ -17,6 +18,7 @@ const LayoutUser = () => {
   onLogOut={handleLogOut}/>
       <Outlet/>
       <Footer/>
+      <OutBtn/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className='flex gap-3 justify-center flex-col items-center max-w-sm w-full px-6 md:px-0'>
+        <div onClick={() => handleNavigate(`/q-somos`)} className='flex gap-3 justify-center flex-col items-center max-w-sm w-full px-6 md:px-0'>
           <button className='bg-[#3262ff9f] text-white px-3 py-4 border-none rounded-lg text-base font-semibold cursor-pointer no-underline flex justify-center gap-2 items-center w-full transition-all duration-150 hover:bg-[#FF5B32]'>
             Quero Entender
           </button>
