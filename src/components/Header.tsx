@@ -12,7 +12,7 @@ const Header = () => {
   
   return (
     <header className="bg-linear-to-r from-[#056881] to-[#a0dcc0]">
-      <div className="flex justify-between items-center px-4 md:px-16 py-6">
+      <div className="flex justify-between items-center px-4 md:px-16 py-6 text-[#050d74]">
         <div className="flex items-center gap-3">
           <NavLink to={`/`}>
             <h2 className="font-bungee">Apoio Delas</h2>
