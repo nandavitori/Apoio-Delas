@@ -246,7 +246,7 @@ const CicloViolencia = () => {
                   </div>
                 </div>
               ) : (
-                <div className="mx-auto relative md:left-15 bg-gradient-to-br from-[#056881] to-[#A0DCC0] rounded-3xl p-8 text-white shadow-2xl">
+                <div className="mx-auto relative md:left-15 bg-linar-to-br from-[#056881] to-[#A0DCC0] rounded-3xl p-8 text-white shadow-2xl">
                   <h3 className="text-2xl font-bold mb-6">Entenda o Ciclo</h3>
                   <p className="text-lg leading-relaxed mb-6">
                     O ciclo da violência foi identificado pela psicóloga Lenore Walker em 1979. Ele se repete constantemente e, <strong>com o tempo, os intervalos entre as fases ficam menores</strong>.
@@ -265,7 +265,7 @@ const CicloViolencia = () => {
 
         {/* Cards informativos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 text-white shadow-xl">
+          <div className="bg-linear-to-br from-[#FF5F37] to-[#FF7552] rounded-3xl p-8 text-white shadow-xl">
             <div className="bg-white/20 rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
               <AlertCircle size={32} />
             </div>
@@ -278,7 +278,7 @@ const CicloViolencia = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#056881] to-[#5fa8a8] rounded-3xl p-8 text-white shadow-xl">
+          <div className="bg-linear-to-br from-[#056881] to-[#5fa8a8] rounded-3xl p-8 text-white shadow-xl">
             <div className="bg-white/20 rounded-2xl w-16 h-16 flex items-center justify-center mb-6">
               <Heart size={32} />
             </div>
