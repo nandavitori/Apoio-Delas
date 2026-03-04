@@ -26,6 +26,11 @@ const Header = () => {
             <NavLink to={`/vozes-noticias`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Vozes e Noticias</NavLink>
             <NavLink to={`/ciclo-violencia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Ciclo de Violencia</NavLink>
           </nav>
+            <NavLink to={`/doacoes`}>
+            <button className="bg-gradient-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold       hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+            Doar
+            </button>
+            </NavLink>
           <button onClick={() => handleNavigate(`/login-user`)} className="bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md">
             Entrar
           </button>
@@ -45,6 +50,11 @@ const Header = () => {
             <NavLink to={`/vozes-noticias`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Vozes e Noticias</NavLink>
             <NavLink to={`/ciclo-violencia`} className={({isActive}) => isActive ? 'text-[#FF5F37]' : 'hover:text-[#FF5F37]'}>Ciclo de Violencia</NavLink>
           </nav>
+            <NavLink to={`/doacoes`}>
+            <button className="w-full bg-gradient-to-r from-[#FF5F37] to-[#FF7552] text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200">
+            Doar
+            </button>
+            </NavLink>
           <button className="bg-[#f7a670] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#f1740e] transition-all duration-200 shadow-sm hover:shadow-md">
             Entrar
           </button>

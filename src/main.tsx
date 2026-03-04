@@ -11,6 +11,8 @@ import NeedHelp from './route/NeedHelp.tsx'
 import Forum from './route/Forum.tsx'
 import Post from './route/Post.tsx'
 import CicloViolencia from './route/CicloViolencia.tsx'
+import Testes from './route/Testes.tsx' 
+import Doacoes from './route/Doacoes.tsx'
 import TiposViolencia from './route/TiposViolencia.tsx'  
 import LeiMariaDaPenha from './route/LeiMariaDaPenha.tsx'  
 import SeusDireitos from './route/SeusDireitos.tsx'  
@@ -44,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/testes",
-        element: <Mapa/>
+        element: <Testes/>
       },
       {
         path:"/preciso-ajuda",
@@ -81,6 +83,10 @@ const router = createBrowserRouter([
       {
         path: '/g-apoio',
         element: <GruposApoio/>
+      },
+      {
+        path: "/doacoes",
+        element: <Doacoes/>
       }
     ]
   },
