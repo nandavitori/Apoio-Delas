@@ -29,10 +29,13 @@ const Us = () => {
               Uma ideia que nasceu da <span className="text-[#7b0692]">necessidade real</span>
             </h2>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Durante nossos estudos para a disciplina Analise e projeto de Software ministrada pelo professor Anderson Costa, nos deparamos com dados alarmantes sobre violência contra a mulher no Brasil. Percebemos que muitas vítimas não sabiam a quem recorrer, quais eram seus direitos ou onde buscar ajuda.
+             Durante nossos estudos para a disciplina Análise e Projeto de Software, ministrada pelo professor Anderson Costa, nos deparamos com dados alarmantes sobre violência contra a mulher no Brasil. Percebemos que muitas vítimas não sabiam a quem recorrer, quais eram seus direitos ou onde buscar ajuda.
             </p>
             <p className="text-gray-600 leading-relaxed text-sm">
               Foi nesse momento que decidimos construir o <strong className="text-[#056881]">Apoio Delas</strong> — uma plataforma que centraliza informação, acolhe relatos e conecta mulheres a serviços de apoio de forma simples e segura.
+            </p>
+             <p className="text-gray-600 leading-relaxed text-sm">
+              O projeto foi idealizado e desenvolvido por <strong className='text-[#056881]'>Ananda Nunes, Driele Carvalho, Thaylan Fonseca, Iam Melo e Filipe Cruz</strong>, estudantes comprometidas em usar a tecnologia como ferramenta de transformação social.
             </p>
             <p className="text-gray-600 leading-relaxed text-sm">
               Mais do que um projeto acadêmico, é um compromisso com a dignidade e a segurança de todas as mulheres.

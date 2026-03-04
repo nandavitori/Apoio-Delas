@@ -1,4 +1,5 @@
-import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake, Heart, Lightbulb, Target, MapPin, FileText, Phone} from "lucide-react"
+import {Users, ClipboardList, Megaphone, BookOpen, Scale, Shield, ShieldCheck, HeartHandshake, Heart, Lightbulb, Target, MapPin, FileText, Phone, MessageCircle, LinkIcon} from "lucide-react"
+import {FaWhatsapp,FaDiscord, FaInstagram, FaTelegram} from 'react-icons/fa'
 import { Link } from "react-router-dom"
 
  type Card = {
@@ -8,8 +9,8 @@ import { Link } from "react-router-dom"
     btn: React.ReactNode,
 }
 type LinkItem =
-  | { label: string; href: string; external: true }
-  | { label: string; to: string; external: false }
+  | { label: string; href: string; external: true, icon?: React.ReactNode }
+  | { label: string; to: string; external: false, icon?: React.ReactNode }
 
  type CardLink = {
     icon: React.ReactNode,
@@ -54,12 +55,19 @@ type LinkItem =
   color: string
   bg: string
  }
+
+ export type GroupCard = {
+  icon: React.ReactNode,
+  title: string,
+  text: string,
+  links: LinkItem[]
+ }
 export const cardsData: Card[] = [
     {
     icon: <Users size={48} className="text-white" />,
     title: 'Grupos de Apoio',
     text: 'Conexão com grupos para compartilhar experiências e fortalecer a rede de suporte',
-    btn: <Link to={`/testes`}>Acessar</Link>,
+    btn: <Link to={`/g-apoio`}>Acessar</Link>,
    
   },
   {
@@ -235,7 +243,7 @@ export const pilares = [
   {
     icon: <Users size={24} className="text-[#056881]" />,
     title: 'Quem Somos',
-    text: 'Somos estudantes comprometidas em usar a tecnologia como ferramenta de transformação social, colocando as mulheres no centro de tudo.',
+    text: 'Somos estudantes comprometidos em usar a tecnologia como ferramenta de transformação social, colocando as mulheres no centro de tudo. Equipe desenvolvedora: Ananda Nunes, Driele Carvalho, Thaylan Fonseca, Iam Melo e Filipe Cruz.'
   }
 ]
 
@@ -299,5 +307,43 @@ export const steps : Step[] = [
     icon: <Phone size={32} />,
     color: 'text-[#056881]',
     bg: 'bg-[#056881]',
+  },
+]
+
+export const grupos: GroupCard[] = [
+  {
+    icon: <Users size={40} className="text-[#09083D]" />,
+    title: 'Grupos de Apoio Presenciais',
+    text: 'Encontre grupos de apoio presenciais na sua cidade para compartilhar experiências e fortalecer sua rede de suporte.',
+    links: [
+      { label: 'Acessar link', href: '#', external: true },
+    ],
+  },
+  {
+    icon: <MessageCircle size={40} className="text-[#09083D]" />,
+    title: 'Grupos nas Redes Sociais',
+    text: 'Participe de grupos nas redes sociais moderados por profissionais para troca de apoio e informações de forma segura.',
+    links: [
+      { label: 'WhatsApp', href: '#', icon: <FaWhatsapp />, external: true },
+      { label: 'Discord', href: '#', icon: <FaDiscord />, external: true },
+      { label: 'Instagram', href: '#', icon: <FaInstagram />, external: true },
+      { label: 'Telegram', href: '#', icon: <FaTelegram/>, external: true },
+    ],
+  },
+  {
+    icon: <Heart size={40} className="text-[#09083D]" />,
+    title: 'Comunidades Online',
+    text: 'Acesse comunidades online onde mulheres compartilham suas histórias e se apoiam mutuamente.',
+    links: [
+      { label: 'Acessar comunidade', href: '#', external: true },
+    ],
+  },
+  {
+    icon: <LinkIcon size={40} className="text-[#09083D]" />,
+    title: 'Redes de Apoio Institucional',
+    text: 'Conheça organizações e instituições que oferecem suporte especializado para mulheres em situação de vulnerabilidade.',
+    links: [
+      { label: 'Acessar link', href: '#', external: true },
+    ],
   },
 ]

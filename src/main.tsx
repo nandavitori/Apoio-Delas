@@ -23,6 +23,7 @@ import UserDashboard from './route/UserDashboard.tsx'
 import Us from './route/Us.tsx'
 import AdminDashboard from './route/AdminDashboard.tsx'
 import TutorialDenuncia from './route/TutorialDenuncia.tsx'
+import GruposApoio from './route/GruposApoio.tsx'
 
 const router = createBrowserRouter([
   // site publico
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: "/tutorial-denuncia",
         element: <TutorialDenuncia/>
+      },
+      {
+        path: '/g-apoio',
+        element: <GruposApoio/>
       }
     ]
   },
